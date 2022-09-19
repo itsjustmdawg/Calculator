@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="process.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="calculator.svg">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">   
+            <div class="keys">
+                <table>
+                    <tr colspan="3">
+                        <input class="display-box" type="text" id="result" disabled/>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="functionKey" onclick="clearScreen()" value="C"></td>
+                        <td><input type="button" class="functionKey" onclick="display('%')" value="%"></td>
+                        <td><input type="button" class="functionKey" onclick="display('/')" value="/"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="button" class="numberKey" onclick="display('7')" value="7"></td>
+                        <td><input type="button" class="numberKey" onclick="display('8')" value="8"></td>
+                        <td><input type="button" class="numberKey" onclick="display('9')" value="9"></td>
+                        <td><input type="button" class="functionKey" onclick="display('*')" value="X"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="button" class="numberKey" onclick="display('4')" value="4"></td>
+                        <td><input type="button" class="numberKey" onclick="display('5')" value="5"></td>
+                        <td><input type="button" class="numberKey" onclick="display('6')" value="6"></td>
+                        <td><input type="button" class="functionKey"onclick="display('-')" value="-"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="button" class="numberKey" onclick="display('1')" value="1"></td>
+                        <td><input type="button" class="numberKey" onclick="display('2')" value="2"></td>
+                        <td><input type="button" class="numberKey" onclick="display('3')" value="3"></td>
+                        <td><input type="button" class="functionKey" onclick="display('+')" value="+"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="button" class="numberKey" onclick="display('0')" value="0"></td>
+                        <td><input type="button" class="functionKey" onclick="display('.')" value="."></td>
+                        <td><input type="button" class="functionKey" onclick="calculate()" value="="></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
